@@ -1,7 +1,11 @@
 /* 선택자(selector) */
 /* Cascading Style sheet */
 
-#header-center {
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.center-align {
   margin: 0 auto;  /*center arrange*/
   width: 1080;
 }
@@ -77,6 +81,16 @@
   background-size: 440px 410px;
   width: 22px;
   height: 22px;
+  display: inline-block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
   display: inline-block;
 }
 
