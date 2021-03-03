@@ -2,26 +2,99 @@
 /* Cascading Style sheet */
 
 #header-center {
-  margin: 0 auto;
+  margin: 0 auto;  /*center arrange*/
   width: 1080;
 }
 
-#header-search > h1 {
-  width: 280px;
+#header-search a {
+  text-decoration: none;
+}
+#header-search h1 {
+  width: 222px;
+  height: 55px;
   display: inline-block;
+  background-image: url(./sp_main_153a02.png);
+  background-position: 0 -158px;
+  background-repeat: no-repeat;
+  background-size: 440px 410px;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  /* text-indent: 100%;
+  overflow: hidden; */
 }
 
-#header-search > h2 {
+#header-search h1 span {
+  display: none;
+}
+#header-search h2 {
   display: none;
 }
 
-#header-search > fieldset {
-  width: 520px;
+#header-search fieldset {
+  margin-left: 20px;
+  margin-right: 0px;
+  padding: 13px 15px;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+#header-search fieldset input {
+  width: 444px;
+  height: 24px;
+  margin: 1px;
+  padding: 0;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  outline: none;
+  border-radius: 0;
+  border: 0;
+}
+
+#header-search fieldset button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  padding: 0;
+  background:#19ce60;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#search-image {
+  background-image: url(./sp_main_153a02.png);
+  background-position: -204px -386px;
+  background-repeat: no-repeat;
+  background-size: 440px 410px;
+  width: 22px;
+  height: 22px;
   display: inline-block;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
 /*
-#header-search h1 {
+#header-center h1 {
   자손 선택자
 }
 */
