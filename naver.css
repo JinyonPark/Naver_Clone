@@ -11,7 +11,7 @@ html, body {
 }
 .center-align {
   margin: 0 auto;  /*center arrange*/
-  width: 1120px;
+  width: 1200px;
 }
 
 a {
@@ -40,6 +40,7 @@ header div.service_area {
   /* text-indent: 100%;
   overflow: hidden; */
 }
+
 #header-search h1 span {
   display: none;
 }
@@ -84,6 +85,24 @@ header div.service_area {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+#search_keyboard {
+  width: 20px;
+  height: 12px;
+  background-position: -420px -248px;
+  background-repeat: no-repeat;
+  margin: -6px 0 0 7px;
+  vertical-align: middle;
+}
+
+#search_history {
+  width: 10px;
+  height: 5px;
+  background-position: -404px -258px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  vertical-align: middle;
 }
 
 #search-image {
@@ -166,6 +185,22 @@ ul.my_favorite li.nav_item a.nav_a {
   margin: 9px 2px 0 0;
 }
 
+.more_view_image {
+  width: 11px;
+  height: 7px;
+  background-position: -332px -258px;
+  margin-left: 7px;
+  vertical-align: 2px;
+}
+
+a.nav_a.more_view {
+  margin-left: 17px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #202020;
+  text-align: right;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -179,6 +214,10 @@ ul.my_favorite li.nav_item a.nav_a {
   overflow: hidden;
 }
 
+main {
+  display: inline-block;
+  width: 100%;
+}
 /*
 #header-center h1 {
   자손 선택자
