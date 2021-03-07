@@ -7,6 +7,7 @@ html, body {
   font-size: 12px;
   line-height: 16px;
   color: #202020;
+  background-color: transparent;
   font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 .center-align {
@@ -16,6 +17,10 @@ html, body {
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 header {
@@ -117,7 +122,8 @@ nav {
 }
 
 nav div {
-  padding: 11px 270px 11px 0;
+  /* padding: 11px 270px 11px 0; */
+  position: relative;
 }
 
 nav div ul {
@@ -153,6 +159,48 @@ ul.my_favorite li.nav_item a.nav_a {
   line-height: 30px;
   font-weight: 700;
   letter-spacing: -.3px;
+}
+
+#search-ranking {
+  position:absolute;
+  top:8px;
+  right: 0;
+  width: 198px;
+  height: 20px;
+  padding: 0;
+}
+
+#search-ranking:hover ul{
+  display: inline-block;
+}
+
+#search-ranking ul {
+  display: none;
+  list-style: none;
+  padding: 17px;
+  margin: 0;
+  width: 332px;
+  height: 334px;
+  border: 1px solid #aaa;
+  background-color: white;
+  position: absolute;
+  top: -9px;
+  right: 0;
+}
+
+#search-ranking ul li{
+  display: block;
+}
+
+#rank-number {
+  margin-top: -9px;
+  color: #00ab33;
+  font-size: 16px;
+}
+
+#rank-title {
+  letter-spacing: -1px;
+  font-size: 14px;
 }
 
 .nav_item {
@@ -217,7 +265,339 @@ a.nav_a.more_view {
 main {
   display: inline-block;
   width: 100%;
+  border-bottom: 1px solid #e4e8eb;
 }
+
+#main-centered {
+  padding: 8px 10px 17px;
+}
+
+#main-first-block {
+  display: inline-block;
+  width: 100%;
+}
+
+#main-ad {
+  display: inline-block;
+  width: 740px;
+  height: 120px;
+  background: #555;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  float: left;
+}
+
+#main-login {
+  display: inline-block;
+  padding: 10px 10px;
+  width: 332px;
+  height: 120px;
+  vertical-align: top;
+  background-color: yellow;
+  margin-bottom: 8px;
+  float: left;
+}
+
+#main-login .login-wrapper a.login-text-a {
+  display: block;
+  padding: 15px 0;
+  margin-top: 11px;
+  background-color: #19ce60;
+  border: 1px solid #15c654;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main-login .login-text {
+  padding-left: 3px;
+  color: grey;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#main-login .login-id-image {
+  float: left;
+  line-height: 38px;
+  width: 10px;
+  height: 14px;
+  background-position: -408px -55px;
+  background-repeat: no-repeat;
+  margin: 11px 2px 1px;
+}
+
+#main-login .login-id {
+  float: left;
+  font-size: 12px;
+  line-height: 38px;
+  margin: 0 3px 0 3px;
+}
+
+#main-login .login-id:hover {
+  text-decoration: underline;
+}
+
+#main-login .login-passwd-line {
+  float: left;
+  background-color: #d7dce0;
+  width: 3px;
+  height: 3px;
+  margin: 18px 5px 0 2px;
+}
+
+#main-login .login-passwd {
+  float: left;
+  font-size: 12px;
+  line-height: 38px;
+}
+
+#main-login .login-passwd:hover {
+  text-decoration: underline;
+}
+
+#main-login .login-signup {
+  float: right;
+  font-size: 12px;
+  line-height: 38px;
+}
+
+#main-login .login-signup-image {
+  float: right;
+  width: 11px;
+  height: 11px;
+  background-position: -345px -308px;
+  background-repeat: no-repeat;
+  margin: 14  px 5px 0 0;
+}
+
+#main-login .login-signup:hover {
+  text-decoration: underline;
+}
+
+
+.inline-block{
+  display: inline-block;
+}
+
+#main-second-block {
+  display: inline-block;
+  width: 100%;
+}
+
+#main-second-block .inline-block:first-child {
+  width: 740px;
+  margin-right: 8px;
+  float: left;
+}
+
+#main-second-block .inline-block:last-child {
+  width: 332px;
+  vertical-align: top;
+  float: left;
+}
+
+#main-ytn {
+  display: inline-block;
+  width: 740px;
+  height: 46px;
+  background-color: yellow;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+#main-ytn h3,
+#main-ytn ol   {
+  display: inline-block;
+}
+
+#main-newstand {
+  display: inline-block;
+  width: 740px;
+  height: 246px;
+  background-color: yellow;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+#main-newstand h3 {
+  height: 45px;
+  border-bottom: 1px solid #f1f3f6;
+}
+
+#main-newstand ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-newstand li {
+  float: left;
+  width: 123px;
+  height: 67px;
+  border-right: 1px solid #f1f3f6;
+  border-bottom: 1px solid #f1f3f6;
+  text-align: center;
+}
+
+#main-newstand li img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#main-weather {
+  display: inline-block;
+  width: 332px;
+  height: 142px;
+  background-color: yellow;
+  margin-bottom: 8px;
+}
+
+#main-second-ad {
+  display: inline-block;
+  width: 332px;
+  height: 150px;
+  background: #555;
+  margin-bottom: 8px;
+}
+
+#main-third-block {
+  display: inline-block;
+  width: 100%;
+}
+
+#main-category {
+  float: left;
+  width: 740px;
+  height: 837px;
+  background-color: yellow;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+#main-shopping {
+  float: left;
+  width: 332px;
+  height: 837px;
+  background-color: yellow;
+  margin-bottom: 8px;
+}
+
+#main-shopping iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#main-fouth-block {
+  display: inline-block;
+  width: 100%;
+}
+
+#main-event {
+  float: left;
+  width: 740px;
+  height: 130px;
+  background-color: yellow;
+  vertical-align: top;
+  margin-right: 8px;
+}
+
+#main-third-ad {
+  float: left;
+  width: 332px;
+  height: 130px;
+  background: #555;
+}
+
+#notice_title {
+  display: inline-block;
+  width: 1057px;
+  border-bottom: 1px solid #e4e8eb;
+}
+
+footer .title {
+  float: left;
+  padding: 16px 8px 15px;
+  font-size: 12px;
+}
+
+
+footer .title a:hover{
+  text-decoration: underline;
+}
+
+#notice_title .notice_box {
+  float: right;
+  padding: 16px 8px 15px;
+}
+
+footer .notice_box a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #202020;
+}
+
+footer .notice_box a:hover{
+  text-decoration: underline;
+}
+
+footer #notice_title .notice_image {
+  margin: 0 5px;
+  padding: 7px 0;
+  width: 8px;
+  height: 12px;
+  background-position: -408px -110px;
+  vertical-align: middle;
+}
+
+.patner-box-wrab {
+  display: inline-block;
+  padding: 20px 0;
+  width: 780px;
+  height: 106px;
+}
+
+.patner-box {
+  display: inline-block;
+  width: 100%;
+}
+.patner-box .patner-title{
+  float: left;
+  width: 87px;
+}
+
+.patner-box .patner-creator a{
+  float: left;
+  color: #777;
+  text-decoration: none;
+}
+
+.patner-box .patner-creator a:hover{
+  text-decoration: underline;
+}
+
+.patner-box .patner-small a{
+  float: left;
+  color: #777;
+  text-decoration: none;
+}
+
+.patner-box .patner-small a:hover{
+  text-decoration: underline;
+}
+
+.patner-small .patner-line {
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+  margin: 0 8px;
+}
+
 /*
 #header-center h1 {
   자손 선택자
