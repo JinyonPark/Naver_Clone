@@ -1,32 +1,6 @@
 /* 선택자(selector) */
 /* Cascading Style sheet */
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  color: #202020;
-  background-color: transparent;
-  font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
-}
-.center-align {
-  margin: 0 auto;  /*center arrange*/
-  width: 1200px;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-header {
-  border-bottom: 1px solid #e4e8eb;
-}
-
 header div.service_area {
   position: absolute;
   top: 12px;
@@ -402,6 +376,12 @@ main {
   float: left;
 }
 
+#main-ytn h3, #main-newstand h3 {
+  font-size: 14px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
 #main-ytn {
   display: inline-block;
   width: 740px;
@@ -479,6 +459,107 @@ main {
   background-color: white;
   margin-right: 8px;
   margin-bottom: 8px;
+}
+
+#main-category-top {
+  display: inline-block;
+  width: 100%;
+}
+
+#subject-all, #subject-list, #subject-prev, #subject-next {
+  float: left;
+  height: 45px;
+}
+
+#subject-list {
+  width: 603px;
+  position: relative;
+}
+
+#subject-all, #subject-prev, #subject-next {
+  position: relative;
+  width: 45px;
+  background: white;
+  border: none;
+  border-left: 1px solid #ebeef3;
+}
+
+#subject-all span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 20px;
+  height: 14px;
+  background-image: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -218px -257;
+}
+
+#subject-prev span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background-image: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -320px 0;
+}
+
+#subject-next span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background-image: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -320px -52px;
+}
+
+#subject-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 45px;
+  width: 700px;
+}
+
+#subject-list li {
+  float: left;
+  margin-right: 10px;
+  padding: 14px 7px 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.opacity {
+  opacity: 0.5;
+  background: white;
+}
+
+.opacity.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  width: 15px;
+}
+
+.opacity.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 45px;
+  width: 15px;
+}
+
+#subject-list li.highlight {
+  border-bottom: 3px solid #00c73c;
+  color: #00b336;
+  height: 45px;
 }
 
 #main-shopping {
