@@ -293,7 +293,7 @@ main {
   width: 332px;
   height: 120px;
   vertical-align: top;
-  background-color: yellow;
+  background-color: white;
   margin-bottom: 8px;
   float: left;
 }
@@ -334,6 +334,7 @@ main {
   font-size: 12px;
   line-height: 38px;
   margin: 0 3px 0 3px;
+  color: #404040;
 }
 
 #main-login .login-id:hover {
@@ -352,6 +353,7 @@ main {
   float: left;
   font-size: 12px;
   line-height: 38px;
+  color: #404040;
 }
 
 #main-login .login-passwd:hover {
@@ -362,6 +364,7 @@ main {
   float: right;
   font-size: 12px;
   line-height: 38px;
+  color: #404040;
 }
 
 #main-login .login-signup-image {
@@ -370,7 +373,7 @@ main {
   height: 11px;
   background-position: -345px -308px;
   background-repeat: no-repeat;
-  margin: 14  px 5px 0 0;
+  margin: 14px 5px 0 0;
 }
 
 #main-login .login-signup:hover {
@@ -403,7 +406,7 @@ main {
   display: inline-block;
   width: 740px;
   height: 46px;
-  background-color: yellow;
+  background-color: white;
   margin-right: 8px;
   margin-bottom: 8px;
 }
@@ -417,7 +420,7 @@ main {
   display: inline-block;
   width: 740px;
   height: 246px;
-  background-color: yellow;
+  background-color: white;
   margin-right: 8px;
   margin-bottom: 8px;
 }
@@ -452,7 +455,7 @@ main {
   display: inline-block;
   width: 332px;
   height: 142px;
-  background-color: yellow;
+  background-color: white;
   margin-bottom: 8px;
 }
 
@@ -473,7 +476,7 @@ main {
   float: left;
   width: 740px;
   height: 837px;
-  background-color: yellow;
+  background-color: white;
   margin-right: 8px;
   margin-bottom: 8px;
 }
@@ -482,7 +485,7 @@ main {
   float: left;
   width: 332px;
   height: 837px;
-  background-color: yellow;
+  background-color: white;
   margin-bottom: 8px;
 }
 
@@ -500,7 +503,7 @@ main {
   float: left;
   width: 740px;
   height: 130px;
-  background-color: yellow;
+  background-color: white;
   vertical-align: top;
   margin-right: 8px;
 }
@@ -515,7 +518,12 @@ main {
 #notice_title {
   display: inline-block;
   width: 1057px;
+  padding-bottom: 7px;
   border-bottom: 1px solid #e4e8eb;
+}
+
+footer {
+  padding-bottom: 92px;
 }
 
 footer .title {
@@ -524,8 +532,13 @@ footer .title {
   font-size: 12px;
 }
 
+#notice_title .title a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #202020;
+}
 
-footer .title a:hover{
+#notice_title .title a:hover{
   text-decoration: underline;
 }
 
@@ -556,8 +569,9 @@ footer #notice_title .notice_image {
 .patner-box-wrab {
   display: inline-block;
   padding: 20px 0;
-  width: 780px;
+  width: 1057px;
   height: 106px;
+  border-bottom: 1px solid #e4e8eb;
 }
 
 .patner-box {
@@ -569,13 +583,13 @@ footer #notice_title .notice_image {
   width: 87px;
 }
 
-.patner-box .patner-creator a{
+.patner-item a{
   float: left;
   color: #777;
   text-decoration: none;
 }
 
-.patner-box .patner-creator a:hover{
+.patner-item a:hover{
   text-decoration: underline;
 }
 
@@ -589,7 +603,7 @@ footer #notice_title .notice_image {
   text-decoration: underline;
 }
 
-.patner-small .patner-line {
+.patner-line {
   display: inline-block;
   width: 1px;
   height: 11px;
@@ -598,6 +612,55 @@ footer #notice_title .notice_image {
   margin: 0 8px;
 }
 
+.patner-box .patner-business a{
+  float: left;
+  color: #777;
+  text-decoration: none;
+}
+
+.patner-box.patner-margin {
+  margin-top: 9px;
+}
+
+.corp_area {
+  display: inline-block;
+  padding-top: 25px;
+  width: 1057px;
+  height: 42;
+}
+
+.list-corp {
+  list-style: none;
+  margin: 0 13px 0 0;
+  overflow: hidden;
+  float: left;
+  padding: 0;
+}
+
+.corp-item {
+  float: left;
+}
+
+.corp-item a{
+  color: #777;
+}
+
+.corp-item a:hover{
+  text-decoration: underline;
+}
+
+.addr {
+  float: left;
+}
+
+.addr a {
+  color: #202020;
+  font-weight: 700;
+  font-style: normal;
+  color: #202020;
+  text-decoration: none;
+
+}
 /*
 #header-center h1 {
   자손 선택자
