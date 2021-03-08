@@ -466,6 +466,10 @@ main {
   width: 100%;
 }
 
+section {
+  border: 1px solid #dee3eb;
+}
+
 #subject-all, #subject-list, #subject-prev, #subject-next {
   float: left;
   height: 45px;
